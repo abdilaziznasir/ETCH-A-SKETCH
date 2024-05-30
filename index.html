@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Color Change</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <h1> ETCH-A-SKETCH</h1>
+    <div>
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('random')">Random</button>
+        <input type="number" id="gridSize" placeholder="Enter grid size (2-100)" min="2" max="100">
+        <button onclick="changeSize(document.getElementById('gridSize').value)">Change Grid Size</button>
+        <button onclick="resetContainer()">Reset Grid</button>
+    </div>
+    <div class="container"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
